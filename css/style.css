@@ -1,32 +1,43 @@
 body{
-    background-color: rgba(240, 255, 240, 0.65);
+    background: linear-gradient(#E7FFFF, #F0FFF0);
     /* background-image: url('../img/V004424-Peonies.eps');*/
     /*url("http://allswalls.com/images/mountain-road-backgrounds-wallpaper-2.jpg") no-repeat scroll;*/
+}
+
+.navbar-style{
+background-color: rgba(255, 239, 50, 0.2);
 }
 
 .header{
     background-color: rgba(231, 255, 255, 0.67);
     color: #337ab7;
-    padding-top: 50px;
+    padding: 100px;
 }
 .img-self{
     height:300px;
-    /*margin-top:50px;*/
     float:right
  }
 .btn-git-color{
-    color: #ffef32;
-    max-font-size: 40px;
-    /*color: #009999;*/
+    color: rgb(255, 239, 50);
+    font-size: 21px;
+    /*color: rgb(0, 153, 153);
+    background-color: rgba(231, 255, 255, 0.67);
+    */
+}
+div.row>h1{
+    padding-bottom: 20px;
 }
 .footer{
-    background-color: rgba(231, 255, 255, 0.67);
+    background: linear-gradient(#F0FFF0, #E7FFFF);
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.div-about-me{
-
+.div-contact{
+    height:100%;
+}
+a [class^="glyphicon-"], a [class*=" glyphicon-"] {
+    display: inline;
 }
 
 input:focus{background-color:rgba(240, 255, 240, 0.65);}
@@ -40,5 +51,4 @@ div.col-xs-offset-3>button {
     border: outset aquamarine;
     margin-top:20px;
     margin-left: 40px;
-    /*добавить рамочку и паддинг-топ*/
 }
