@@ -1,8 +1,9 @@
 body{
     background: linear-gradient(#E7FFFF, #F0FFF0);
+    height: 100%;
 }
 
-.navbar-style{
+.navbar-bckgr-color{
 background-color: rgba(255, 239, 50, 0.2);
 }
 
@@ -12,24 +13,33 @@ background-color: rgba(255, 239, 50, 0.2);
     padding: 100px;
 }
 .img-self{
-    height:300px;
+    height:60vh;
     float:right
  }
 .btn-git-color{
     color: rgb(255, 239, 50);
     font-size: 21px;
-    
 }
+
+.btn-contact-link{
+    padding:14px;
+
+}
+
 div.row>h1{
     padding-bottom: 20px;
 }
 .footer{
+    height:20vh;
     background: linear-gradient(#F0FFF0, #E7FFFF);
     padding-top: 50px;
     padding-bottom: 50px;
 }
+#textarea_addition_info{
+    width: 100%;
+}
 
-.div-contact{
+section{
     height:100%;
 }
 a [class^="glyphicon-"], a [class*=" glyphicon-"] {
