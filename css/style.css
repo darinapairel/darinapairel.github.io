@@ -4,18 +4,40 @@ body{
 }
 
 .navbar-bckgr-color{
-background-color: rgba(255, 239, 50, 0.2);
+background-color:lightsalmon ;
 }
 
+.navbar-default .navbar-nav>li>a{color:white}
+.navbar-default .navbar-nav>li>button{color:white}
+.navbar-default .navbar-header>a{color:white}
+
 .header{
-    background-color: rgba(231, 255, 255, 0.67);
-    color: #337ab7;
-    padding: 100px;
+    background-image: url("Background.jpg");
+    background-size: cover;
+    /*background-color: rgba(231, 255, 255, 0.67);*/
 }
+
+.header-text{
+    padding: 100px;
+    color: #337ab7;
+    background-color: transparent;
+}
+
+.about-header{
+    color: rgb(0, 143, 143);
+    text-align: center;
+
+}
+
+.about-font-size{
+    font-size: 25px;
+    margin-top: 50px;
+}
+
 .img-self{
     height:60vh;
-    float:right
  }
+
 .btn-git-color{
     color: rgb(255, 239, 50);
     font-size: 21px;
@@ -26,35 +48,40 @@ background-color: rgba(255, 239, 50, 0.2);
 
 }
 
+.modal-body{
+    background-color:#F0FFF0
+}
+
 div.row>h1{
     padding-bottom: 20px;
 }
+
 .footer{
     height:20vh;
-    background: linear-gradient(#F0FFF0, #E7FFFF);
+    /*background: linear-gradient(#F0FFF0, #E7FFFF);*/
     padding-top: 50px;
     padding-bottom: 50px;
 }
-#textarea_addition_info{
-    width: 100%;
-}
+
 
 section{
-    height:100%;
+    height:100vh;
 }
+
 a [class^="glyphicon-"], a [class*=" glyphicon-"] {
     display: inline;
 }
 
 input:focus{background-color:rgba(240, 255, 240, 0.65);}
 a{color: #337ab7}
+
 form{
     padding-top: 150px;
     padding-bottom: 150px;
 }
-div.col-xs-offset-3>button {
+
+.button-form-submittion {
     background-color: rgba(231, 255, 255, 0.67);
     border: outset aquamarine;
     margin-top:20px;
-    margin-left: 40px;
 }
