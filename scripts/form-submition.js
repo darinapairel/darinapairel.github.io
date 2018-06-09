@@ -3,7 +3,7 @@ var but = document.querySelector('.button-form-submittion');
 but.onclick=
     function () {
         var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open('POST', 'https://api.sendpulse.com/smtp/emails');
+        xmlhttp.open('POST', 'https://api.sendpulse.com/smtp/emails', true);
         xmlhttp.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status === 200) {
