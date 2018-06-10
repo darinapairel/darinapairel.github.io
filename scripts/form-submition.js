@@ -12,7 +12,8 @@ but.onclick=
             }
         };
         xmlhttp.send(JSON.stringify(
-        {
+            
+        {"email":[
             "key":"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCjmWws6b8csUWLAHF/gKNEkbM4Vb6Zau79+VKudnnQ9pkELRd8bnJmMOwEZ8ltNBOUdP5c/hWEqZpO1U7YrX5CYNBD72diiOf5xEovpC7ABho6tFws0aOXD1atwhpJLFGPKYZxkY+VJ5aITxgqqQCHwMVLfJFAetkuRZcrg3XvbQIDAQAB",
             "pass":"biBQksngbrXKG64",
             "action":"send_email",
@@ -26,6 +27,7 @@ but.onclick=
                 }
             },
             "to" : [{ "email" : "darinamandarina97@gmail.com"  }]
+         ]
         }));
     };
 
