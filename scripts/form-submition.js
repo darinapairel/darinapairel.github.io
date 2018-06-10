@@ -4,7 +4,7 @@ but.onclick=
     function () {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.withCredentials = true;
-        xmlhttp.open('POST', 'https://api.sendpulse.com/smtp/emails', true);
+        xmlhttp.open('POST', 'http://api.sendpulse.com/smtp/emails', true);
         xmlhttp.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status === 200) {
