@@ -1,85 +1,189 @@
-body{
-    background: linear-gradient(#E7FFFF, #F0FFF0);
-    height: 100%;
+.container{
+  width:72.9vw;
+  text-align:center;
+  background-color: #8dc0f2;
+  color:white;
+  
+}
+.container-center{
+  margin-left: 13.5vw;
+}
+.nav-item,.nav-logo{
+  flex-basis: calc(100% / 5 );
+  padding:15px 0;
+   
+}
+nav{
+  display: flex;
+  flex-wrap:wrap;
+  font-family: 'Alegreya Sans SC';
+}
+nav.header{
+   box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+#home::before{
+  content:'\f015'; 
+}
+#home, #about, #contact, #blog, #github{
+  display:block;
+}
+#about::before{
+  content:'\f2bd'; 
 }
 
-.navbar-bckgr-color{
-background-color:lightsalmon ;
+#contact::before{
+  content:'\f0e0'; 
 }
 
-.navbar-default .navbar-nav>li>a{color:white}
-.navbar-default .navbar-nav>li>button{color:white}
-.navbar-default .navbar-header>a{color:white}
-
-.header{
-    background-image: url("Background.jpg");
-    background-size: cover;
-    /*background-color: rgba(231, 255, 255, 0.67);*/
+#blog::before{
+  content:'\f328'; 
+}
+#github::before{
+  content:'\f09b'; 
+  font-size:4em;
+  color: #f5a4a4;
 }
 
+.nav-logo{
+  background-color: #fae6d2;
+  text-align:left;
+  font-size: 2.2em;
+  color:white;
+  font-family:'Great Vibes';
+}
+.nav-item{
+  color:#f5a4a4;
+  background-color: #Fafad2;
+  font-size: 1.3em;
+}
+.header-hello{
+  font-size: 4em;
+  font-family: 'Great Vibes';
+}
 .header-text{
-    padding: 100px;
-    color: #337ab7;
-    background-color: transparent;
+  font-size: 1.5em;
+  font-family: 'Indie Flower';
+}
+.header-github-link{
+  font-size: 2.5em;
+  color:#f5a4a4;
+}
+.down::before{
+  content:'\f078';
+  color: #Fafad2;
+  font-size:4em;
+}
+section, header{
+  min-height:100vh;
+  display: flex;
+}
+.content{
+  margin:auto;
+}
+.photo{
+  background-image: url('https://pp.userapi.com/c639223/v639223227/4fbb5/jrXXYXzeQp4.jpg');
+  background-size:cover;
+  height:200px;
+  width: 200px;
+  border-radius:100%;  
+  margin: 0 auto;
+}
+.about{
+  font-size: 4em;
+  font-family: 'Great Vibes'
+}
+.about-text{
+  font-size: 1.5em;
+  font-family: 'Indie Flower';
+}
+.about-text-stack{
+  font-size: 1.2em;
+}
+.feedback{
+  font-size: 4em;  
+  font-family: 'Great Vibes'
+}
+.feedback-form{
+  display:flex;
+  flex-flow:column nowrap;
+  min-height:80vh;
+  max-width:29.167vw; 
+  margin: 0 auto;
 }
 
-.about-header{
-    color: rgb(0, 143, 143);
-    text-align: center;
-
+input::-webkit-input-placeholder, input::-moz-placeholder, input::placeholder, input:-ms-input-placeholder{
+  color:#f5a4a4;
+  font-family: 'Indie Flower';
 }
-
-.about-font-size{
-    font-size: 25px;
-    margin-top: 50px;
+input, textarea{
+   margin-bottom: calc(10px*100 / 80) ; /*переводим px в vh*/
+   border: calc(2px*100 / 80) solid #f5a4a4;  
 }
-
-.img-self{
-    height:60vh;
- }
-
-.btn-git-color{
-    color: rgb(255, 239, 50);
-    font-size: 21px;
+button{
+  background-color:#f5a4a4;
+  border: 0;
+  padding: calc(15px*100 / 80);
+  min-width: 9vw;
+  border-radius: 13px;
+  color:white;
+  align-self: center;
+  font-family: 'Alegreya Sans SC';
+  margin-bottom: 20px;
+  
 }
-
-.btn-contact-link{
-    padding:14px;
-
+#name{
+  width: calc(100% / 1 - 5vw);
 }
-
-.modal-body{
-    background-color:#F0FFF0
+#email{
+  width: calc(100% / 1 - 5vw);
+  align-self: flex-end;
 }
-
-div.row>h1{
-    padding-bottom: 20px;
+footer.container-center{
+  min-height:50vh; 
+  background-color: #fafad2;
 }
-
-.footer{
-    height:20vh;
-    /*background: linear-gradient(#F0FFF0, #E7FFFF);*/
+nav.footer{
+  background-color: #fafad2;
+  display:flex;
+  flex-direction: row;
 }
-
-
-section{
-    height:100vh;
+.footer-nav{
+  display:flex;
+  flex-direction: row;
+  margin:0 auto;
+  min-width:40vw;
+  align-items:center;
+  justify-content:center;
+  border-bottom: 2px solid #f5a4a4;
 }
-
-a [class^="glyphicon-"], a [class*=" glyphicon-"] {
-    display: inline;
+.footer-nav-item{
+    flex-basis: calc(100% / 4 );
 }
-
-input:focus{background-color:rgba(240, 255, 240, 0.65);}
-a{color: #337ab7}
-
-form{
-   padding-right: 10px;
-    padding-left: 10px;
+nav>.logos{
+  min-width:100%;
+  padding-left: 6vw; 
+  color:black;
 }
-
-.button-form-submittion {
-    background-color: rgba(231, 255, 255, 0.67);
-    border: outset aquamarine;
-    margin-top:20px;
+.facebook-logo, .github-logo, .codepen-logo, .gmail-logo{
+  font-size: 4em;
+  padding: 0 2vw;
 }
+.github-logo::before{
+  content:'\f09b'; 
+}
+.gmail-logo::after{
+  content:'\f0e0';
+  color: darkred;
+}
+.facebook-logo::after{
+  content:'\f082';
+  color:darkblue;
+}
+.codepen-logo::after{
+   content:'\f1cb'; 
+}
+.footer-line{
+  height: 20px;
+  background-color: #fae6d2;
+}
+section
