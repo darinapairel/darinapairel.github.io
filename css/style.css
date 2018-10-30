@@ -9,13 +9,16 @@
   margin-left: 13.5vw;
 }
 .nav-item,.nav-logo{
-  flex-basis: calc(100% / 5 );
+  -ms-flex-preferred-size: calc(100% / 5 );
+      flex-basis: calc(100% / 5 );
   padding:15px 0;
    
 }
 nav{
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap:wrap;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
   font-family: 'Alegreya Sans SC';
 }
 nav.header{
@@ -75,6 +78,7 @@ nav.header{
 }
 section, header{
   min-height:100vh;
+  display: -ms-flexbox;
   display: flex;
 }
 .content{
@@ -104,11 +108,18 @@ section, header{
   font-family: 'Great Vibes'
 }
 .feedback-form{
+  display:-ms-flexbox;
   display:flex;
-  flex-flow:column nowrap;
+  -ms-flex-flow:column nowrap;
+      flex-flow:column nowrap;
   min-height:80vh;
   max-width:29.167vw; 
   margin: 0 auto;
+}
+
+input::-webkit-input-placeholder, input::-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeholder{
+  color:#f5a4a4;
+  font-family: 'Indie Flower';
 }
 
 input::-webkit-input-placeholder, input::-moz-placeholder, input::placeholder, input:-ms-input-placeholder{
@@ -126,7 +137,8 @@ button{
   min-width: 9vw;
   border-radius: 13px;
   color:white;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   font-family: 'Alegreya Sans SC';
   margin-bottom: 20px;
   
@@ -136,7 +148,8 @@ button{
 }
 #email{
   width: calc(100% / 1 - 5vw);
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 footer.container-center{
   min-height:50vh; 
@@ -144,20 +157,27 @@ footer.container-center{
 }
 nav.footer{
   background-color: #fafad2;
+  display:-ms-flexbox;
   display:flex;
-  flex-direction: row;
+  -ms-flex-direction: row;
+      flex-direction: row;
 }
 .footer-nav{
+  display:-ms-flexbox;
   display:flex;
-  flex-direction: row;
+  -ms-flex-direction: row;
+      flex-direction: row;
   margin:0 auto;
   min-width:40vw;
-  align-items:center;
-  justify-content:center;
+  -ms-flex-align:center;
+      align-items:center;
+  -ms-flex-pack:center;
+      justify-content:center;
   border-bottom: 2px solid #f5a4a4;
 }
 .footer-nav-item{
-    flex-basis: calc(100% / 4 );
+    -ms-flex-preferred-size: calc(100% / 4 );
+        flex-basis: calc(100% / 4 );
 }
 nav>.logos{
   min-width:100%;
@@ -186,4 +206,3 @@ nav>.logos{
   height: 20px;
   background-color: #fae6d2;
 }
-section
