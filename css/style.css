@@ -1,3 +1,6 @@
+body{
+	margin:0;
+}
 .container{
   text-align:center;
   background-color: #8dc0f2;
@@ -19,6 +22,8 @@ nav{
 }
 nav.header{
    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+   position:fixed;
+   width:100%;
 }
 #home::before{
   content:'\f015'; 
@@ -123,8 +128,11 @@ input::-webkit-input-placeholder, input::-moz-placeholder, input::placeholder, i
   font-family: 'Indie Flower';
 }
 input, textarea{
-   margin-bottom: calc(10px*100 / 80) ; /*переводим px в vh*/
-   border: calc(2px*100 / 80) solid #f5a4a4;  
+	border-radius:8px;
+	padding: 3px;
+	width: 100%;
+    margin-bottom: calc(10px*100 / 80) ; /*переводим px в vh*/
+    border: calc(2px*100 / 80) solid transparent;  
 }
 button{
   background-color:#f5a4a4;
@@ -139,13 +147,10 @@ button{
   margin-bottom: 20px;
   
 }
-#name{
-  width: calc(100% / 1 - 5vw);
-}
-#email{
-  width: calc(100% / 1 - 5vw);
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+/*form{ width: calc(100% / 1 - 5vw);}*/
+input{
+    height: 25px;
+    
 }
 footer.container-center{
   min-height:50vh; 
