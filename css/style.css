@@ -1,16 +1,12 @@
 .container{
-  width:72.9vw;
   text-align:center;
   background-color: #8dc0f2;
   color:white;
   
 }
-.container-center{
-  margin-left: 13.5vw;
-}
 .nav-item,.nav-logo{
-  -ms-flex-preferred-size: calc(100% / 5 );
-      flex-basis: calc(100% / 5 );
+  -ms-flex-preferred-size: calc(100% / 4 );
+      flex-basis: calc(100% / 4 );
   padding:15px 0;
    
 }
@@ -181,7 +177,7 @@ nav.footer{
 }
 nav>.logos{
   min-width:100%;
-  padding-left: 6vw; 
+  padding:10px 0;
   color:black;
 }
 .facebook-logo, .github-logo, .codepen-logo, .gmail-logo{
