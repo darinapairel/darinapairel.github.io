@@ -3,56 +3,76 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>portfolio</title>
-      <link rel="stylesheet" href="css/style.css">
-	  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Great+Vibes|Indie+Flower" rel="stylesheet">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio page of Dar Pa - web developer from St.-Petersburg, Russia ">
+  <meta name="keywords" content="portfolio, developer, web, freelancer, портфолио, разработчик, веб, фрилансер">
+  <title>Dar Pa portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="./fullpage.js/dist/fullpage.css" />
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Great+Vibes|Indie+Flower" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
-
 <body>
 
-  
-
+<div id="fullpage" >
 <div class='container container-center'>
-  <nav class='container header'>
-    <div class="nav-item">Home <div id="home" class="fa"></div></div>
-    <div class="nav-item">About<div id="about" class="fa"></div></div>
-    <div class="nav-item">Contact<div id="contact" class="fa"></div></div>
-    <div class="nav-item">Blog <div id="blog" class="fa"></div></div>
+    <nav class='container header' id="menu">
+        <div class="nav-item" data-menuanchor="firstsection"><a href="#firstsection">Home <div id="home" class="fa"></div></a></div>
+        <div class="nav-item" data-menuanchor="secondsection"><a href="#secondsection">About<div id="about" class="fa"></div></a></div>
+        <div class="nav-item" data-menuanchor="thirdsection"><a href="#thirdsection">Contact<div id="contact" class="fa"></div></a></div>
+
   </nav>
-  <header>
+  <header class=" section active firstsection" id="section0">
     <div class="content">
     <div class="header-hello">Hello</div>
     <div class="header-text">I am Darina Pa. <br/>I am web developer, student and geek-like girl<br/> I have this site and some code on</div>
     <div class="github-link">Github<div id="github" class="fab"></div></div>
-    <div class="fa down"></div>
+        <a href="#secondsection"><span class="fa down"data-menuanchor="secondsection"></span></a>
     </div>
   </header>
+
+  <div class="section" data-anchor="secondsection" id="section1">
   <section>
-    <div class="content">
+    <div class="content ">
     <div class="photo"></div>
     <div class="about">About</div>
     <div class="about-text">I am interested in everything new,<br/> this is why I desided to connect my life with IT. <br/>My stack of technologies: <div class="about-text-stack">React.js, Node.js, <br/> HTML5, CSS3, bootstrap(3/4)<br/>flexbox, grid, Git</div></div>
     </div>
   </section>
-  <section>
-    <div class="content">
+  </div>
+
+    <section class="section">
+    <div class="content thirdsection" id="section2">
     <div class="feedback">Feedback</div>
       <form action="" class="feedback-form">
         <input type="text" id="name" placeholder="Enter your name">
         <input type="text" id="lastname"  placeholder="Enter your lastname">
         <input type="text" id="email"  placeholder="Enter your email">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea name="" id="" cols="30" rows="5"></textarea>
         <button>Send</button>
       </form>
+      <nav class="footer">
+        <div class="logos">
+          <a href="https://github.com/darinamandarina/"><div class="fab github-logo"></div></a>
+          <a href="mailto:paireldarina@gmail.com"><div class="far gmail-logo"></div></a>
+          <a href="https://www.facebook.com/darina.pairel"><div class="fab facebook-logo"></div></a>
+          <a href="https://codepen.io/LostAndForgotten/"><div class="fab codepen-logo"></div></a>
+        </div>
+      </nav>
     </div>
-  </section>
+
+    </section>
+
 <footer class="">
- <div class="footer-line"></div>
   <nav class="footer ">
-    
+    <div class="nav-logo">Portfolio</div>
+    <div class="footer-nav">
+        <div class="nav-item">Home <div class="fa" id="home"></div></div>
+        <div class="nav-item ">About <div class="fa" id="about"></div></div>
+        <div class="nav-item ">Contact <div class="fa" id="contact"></div></div>
+        <div class="nav-item ">Blog <div class="fa" id="blog"></div></div>
+    </div>
+  
     <div class="up"></div>
     <div class="logos">
       <div class="fab github-logo"></div>
@@ -64,5 +84,15 @@
   <div class="footer-line"></div>
 </footer>
 </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="./fullpage.js/dist/fullpage.js"></script>
+<script >
+    new fullpage('#fullpage', {
+        anchors:[ 'firstsection', 'secondsection', 'thirdsection'],
+        menu:'#menu',
+        continuousVertical:true
+    });
+</script>
 </body>
 </html>
