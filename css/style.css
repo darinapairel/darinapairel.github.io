@@ -184,7 +184,10 @@ footer.container-center{
   background-color: #fafad2;
 }
 nav.footer{
-
+  position: absolute;
+  bottom:0;
+  width:100%;
+  padding: 20px 0;
   display:-webkit-box;
 
   display:-webkit-flex;
