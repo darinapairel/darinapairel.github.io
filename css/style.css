@@ -178,17 +178,7 @@ button{
   margin-bottom: 20px;
   
 }
-#name{
-  width: -webkit-calc(100% / 1 - 5vw);
-  width: calc(100% / 1 - 5vw);
-}
-#email{
-  width: -webkit-calc(100% / 1 - 5vw);
-  width: calc(100% / 1 - 5vw);
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
-}
+
 footer.container-center{
   min-height:50vh; 
   background-color: #fafad2;
