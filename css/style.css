@@ -7,8 +7,9 @@ body{
   color:white;
   
 }
-.container-center{
-
+div.nav-item.active{
+	background: #f6f6af;
+	border-bottom: rgba(245,164,164,0.7) solid
 }
 .nav-item,.nav-logo{
   -webkit-flex-basis: -webkit-calc(100% / 3 );
