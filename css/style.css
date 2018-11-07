@@ -8,8 +8,15 @@ body{
   
 }
 div.nav-item.active{
-	background: #f6f6af;
+	background: #f3f398;
 	border-bottom: rgba(245,164,164,0.7) solid
+}
+
+div.nav-item:hover{
+	background:#f6f6af;
+}
+div.nav-item.active:hover{
+	background: #f3f398;
 }
 .nav-item,.nav-logo{
   -webkit-flex-basis: -webkit-calc(100% / 3 );
