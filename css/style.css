@@ -3,20 +3,20 @@ body{
 }
 .container{
   text-align:center;
-  background-color: #8dc0f2;
+  background-color: #454748ee;
   color:white;
   
 }
 div.nav-item.active{
-	background: #f3f398;
+	background: #454748ee;
 	border-bottom: rgba(245,164,164,0.7) solid
 }
 
 div.nav-item:hover{
-	background:#f6f6af;
+	background:#7a7d7eee;
 }
 div.nav-item.active:hover{
-	background: #f3f398;
+	background: #7a7d7eee;
 }
 .nav-item,.nav-logo{
   -webkit-flex-basis: -webkit-calc(100% / 3 );
@@ -74,7 +74,7 @@ nav.header{
 }
 .nav-item{
   color:#f5a4a4;
-  background-color: #Fafad2;
+  background-color: #454748ee;
   font-size: 1.3em;
 }
 .header-hello{
@@ -91,7 +91,7 @@ nav.header{
 }
 .down::before{
   content:'\f078';
-  color: #Fafad2;
+  color: #f5a4a4;
   font-size:4em;
 }
 section{
@@ -189,7 +189,7 @@ button{
 
 footer.container-center{
   min-height:50vh; 
-  background-color: #fafad2;
+  background-color: #454748ee;
 }
 nav.footer{
   position: absolute;
@@ -238,7 +238,7 @@ nav.footer{
 }
 nav>.logos{
   min-width:100%;
-  background:#446d94;
+  background:#626566ee;
   color:black;
 }
 .facebook-logo, .github-logo, .codepen-logo, .gmail-logo{
