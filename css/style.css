@@ -116,13 +116,22 @@ header{
 .content{
   margin:auto;
 }
+.text{
+  margin: auto;
+}
 .photo{
   background-image: url('https://pp.userapi.com/c639223/v639223227/4fbb5/jrXXYXzeQp4.jpg');
   background-size:cover;
   height:200px;
   width: 200px;
   border-radius:100%;  
-  margin: 0 auto;
+  position: absolute;
+}
+.introduce-container{
+  display: flex;
+  justify-content: end;
+  width: 900px;
+  margin: auto;
 }
 .about{
   font-size: 4em;
