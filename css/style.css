@@ -48,6 +48,7 @@ nav.header{
 #home, #about, #contact, #blog, #github{
   display:block;
 }
+
 #about::before{
   content:'\f2bd'; 
 }
@@ -64,6 +65,8 @@ nav.header{
   font-size:4em;
   color: #f5a4a4;
 }
+#github{margin-bottom: 7px;}
+#github:hover::before{color:#f5cda4;}
 
 .nav-logo{
   background-color: #fae6d2;
@@ -85,8 +88,8 @@ nav.header{
   font-size: 1.5em;
   font-family: 'Indie Flower';
 }
-.header-github-link{
-  font-size: 2.5em;
+.github-link{
+  font-size: 1.5em;
   color:#f5a4a4;
 }
 .down::before{
@@ -133,9 +136,14 @@ header{
   font-size: 3em;
   font-family: 'Great Vibes'
 }
-a:active, a:hover, a{
+a:active, a:hover, span.fa.down:hover::before{
+  color: #f5cda4;
   text-decoration: none;
+
+}
+a{
   color: #eee;
+  text-decoration: none;
 }
 .nav-item>a{
   color:#f5a4a4 !important;
@@ -192,7 +200,7 @@ footer.container-center{
   background-color: #454748ee;
 }
 nav.footer{
-  position: absolute;
+  position: fixed;
   bottom:0;
   width:100%;
   padding: 20px 0 0 0;
@@ -241,20 +249,22 @@ nav>.logos{
   background:#626566ee;
   color:black;
 }
-.facebook-logo, .github-logo, .codepen-logo, .gmail-logo{
+.facebook-logo, .github-logo, .codepen-logo, .gmail-logo, .linkedIn-logo{
   font-size: 4em;
   padding: 0 2vw;
+}
+
+.linkedIn-logo::before{
+  content:'\f08c';
 }
 .github-logo::before{
   content:'\f09b'; 
 }
 .gmail-logo::after{
   content:'\f0e0';
-  color: #eee;
 }
 .facebook-logo::after{
   content:'\f082';
-  color:#eee;
 }
 .codepen-logo::after{
    content:'\f1cb'; 
