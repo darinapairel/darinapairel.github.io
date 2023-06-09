@@ -89,11 +89,6 @@ nav.header {
 
 #github::before {
   content: '\f09b';
-  font-size: 4em;
-}
-
-#github {
-  font-size: 7px;
 }
 
 #github,
@@ -208,6 +203,7 @@ header {
   display: flex;
   justify-content: end;
   margin: auto;
+  padding: 0 20px;
 
   @media screen and (min-width:920px) {
     width: 900px;
