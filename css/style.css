@@ -28,7 +28,12 @@ div.nav-item.active:hover {
   -ms-flex-preferred-size: calc(100% / 3);
   flex-basis: calc(100% / 3);
   padding: 15px 0;
+}
 
+.nav-item>a>span {
+  @media screen and (max-width: 760px) {
+    display: none;
+  }
 }
 
 nav {
@@ -58,8 +63,16 @@ nav.header {
 #about,
 #contact,
 #blog,
-#github {
+#github,
+#download {
   display: block;
+}
+
+#download::before {
+  content: '\f358';
+  /* "\f063"; */
+  /* "\f019"; */
+  /* "\f56d"; */
 }
 
 #about::before {
@@ -77,16 +90,19 @@ nav.header {
 #github::before {
   content: '\f09b';
   font-size: 4em;
-  color: #f5a4a4;
 }
 
 #github {
-  margin-bottom: 7px;
+  font-size: 7px;
 }
 
-#github:hover::before {
-  color: #f5cda4;
+#github,
+#download {
+  margin-left: 3px;
+  padding-top: 2px;
 }
+
+
 
 .nav-logo {
   background-color: #fae6d2;
@@ -106,20 +122,45 @@ nav.header {
 .title {
   font-size: 80px;
   font-family: 'Gloria Hallelujah';
+
+  @media screen and (max-width: 760px) {
+    font-size: 40px;
+  }
 }
+
+.links {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.link {
+  display: flex;
+  font-size: 28px;
+  color: #f5a4a4;
+
+  @media screen and (min-width: 760px) {
+    font-size: 40px;
+
+  }
+}
+
 
 .text {
   font-size: 28px;
   font-family: 'Indie Flower';
+  margin: auto;
+
+  @media screen and (max-width: 760px) {
+    font-size: 16px;
+  }
+
 }
 
 .stack {
   font-weight: 700;
-}
-
-.github-link {
-  font-size: 28px;
-  color: #f5a4a4;
 }
 
 .down::before {
@@ -129,7 +170,7 @@ nav.header {
 }
 
 section {
-  padding: 15vh 7px 0;
+  padding: 0 7px;
   min-height: 75vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -150,10 +191,6 @@ header {
   margin: auto;
 }
 
-.text {
-  margin: auto;
-}
-
 .photo {
   background-image: url('https://pp.userapi.com/c639223/v639223227/4fbb5/jrXXYXzeQp4.jpg');
   background-size: cover;
@@ -162,7 +199,7 @@ header {
   border-radius: 100%;
   position: absolute;
 
-  @media screen and (max-width:620px) {
+  @media screen and (max-width: 760px) {
     display: none;
   }
 }
@@ -180,7 +217,8 @@ header {
 
 a:active,
 a:hover,
-span.fa.down:hover::before {
+span.fa.down:hover::before,
+.link:hover>#github:hover::before {
   color: #f5cda4;
   text-decoration: none;
 
@@ -309,6 +347,11 @@ nav>.logos {
 .linkedIn-logo {
   font-size: 80px;
   padding: 0 2vw;
+
+  @media screen and (max-width: 760px) {
+    font-size: 40px;
+  }
+
 }
 
 .linkedIn-logo::before {
