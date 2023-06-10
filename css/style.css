@@ -14,11 +14,7 @@ div.nav-item.active {
   border-bottom: rgba(245, 164, 164, 0.7) solid
 }
 
-div.nav-item:hover {
-  background: #7a7d7eee;
-}
-
-div.nav-item.active:hover {
+div.nav-item.active:hover, div.nav-item:hover {
   background: #7a7d7eee;
 }
 
@@ -147,6 +143,7 @@ nav.header {
   font-size: 28px;
   font-family: 'Indie Flower';
   margin: auto;
+  padding-bottom: 15px;
 
   @media screen and (max-width: 760px) {
     font-size: 16px;
@@ -192,11 +189,7 @@ header {
   height: 200px;
   width: 200px;
   border-radius: 100%;
-  position: absolute;
-
-  @media screen and (max-width: 760px) {
-    display: none;
-  }
+  margin: auto;
 }
 
 .introduce-container {
