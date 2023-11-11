@@ -114,9 +114,9 @@ nav.header {
   font-size: 80px;
   font-family: 'Gloria Hallelujah';
 
-  @media screen and (max-width: 760px) {
+  /* @media screen and (max-width: 760px) {
     font-size: 40px;
-  }
+  } */
 }
 
 .links {
@@ -152,9 +152,9 @@ nav.header {
   margin: auto;
   padding-bottom: 15px;
 
-  @media screen and (max-width: 760px) {
-    font-size: 16px;
-  }
+  /* @media screen and (max-width: 760px) {
+    font-size: 24px;
+  } */
 
 }
 
