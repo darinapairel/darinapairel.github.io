@@ -114,19 +114,28 @@ nav.header {
   font-size: 80px;
   font-family: 'Gloria Hallelujah';
 
+  
+  @media screen and (min-width: 1024px) {
+    font-size: 115px;
+  };
+
   @media screen and (max-width: 760px) {
-    font-size: 40px;
+    font-size: 65px;
   }
+  
 }
 
 .links {
   display: flex;
   flex-wrap: wrap;
-  width: 20vw;
+  width: 240px;
   margin: auto;
-  @media screen and (min-width: 761px) {
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
+  
+
+  @media screen and (min-width: 761px) {
+    width: 40vw;
   }
 }
 
@@ -134,15 +143,23 @@ nav.header {
   display: flex;
   font-size: 28px;
   color: #f5a4a4;
-
-
+  width: 120px;
+  place-content: center;
+  border-radius: 5px;
   @media screen and (min-width: 761px) {
     font-size: 30px;
-    place-content: center;
+    width: 200px;
   }
+  @media screen and (min-width: 1024px) {
+    font-size: 48px;
+  }
+
 }
+
 .link:first-child{
-  margin-right: 40px;
+  @media screen and (min-width: 1024px) {
+    margin-right: 40px;
+  }
 }
 
 
@@ -151,10 +168,15 @@ nav.header {
   font-family: 'Indie Flower';
   margin: auto;
   padding-bottom: 15px;
+  max-width: 70vw;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 48px;
+  }
 
   @media screen and (max-width: 760px) {
-    font-size: 16px;
-  }
+    font-size: 22px;
+  };
 
 }
 
@@ -197,6 +219,12 @@ header {
   width: 200px;
   border-radius: 100%;
   margin: auto;
+
+  @media screen and (min-width: 1024px) {
+    height: 400px;
+    width: 400px;
+  }
+
 }
 
 
