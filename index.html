@@ -1,123 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1"">
-  <meta name="description" content="Portfolio of web developer">
-  <meta name="keywords" content="portfolio, developer, web, freelancer, frontend, fullstack, портфолио, разработчик, веб, фрилансер, фронтенд, фулстек">
-  <title>Darina Frontend</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="./fullpage.js/dist/fullpage.css" />
-  <!-- <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Great+Vibes|Indie+Flower|Gloria+Hallelujah"
-    rel="stylesheet"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="icon" type="image/jpeg" href="/css/Rina.jpg"/>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darina Pairel</title>
 </head>
 
 <body>
-
-  <div id="fullpage">
-    <div class='container container-center'>
-      <nav class='container header' id="menu">
-        <a href="#firstsection" class="nav-item" data-menuanchor="firstsection"><span>Home</span>
-            <div id="home" class="fa">
-            </div>
-          </></a>
-          <a href="#secondsection" class="nav-item" ><span>About</span>
-            <div id="about" class="fa">
-            </div>
-          </a>
-          <a href="#thirdsection" class="nav-item"><span>Contact</span>
-            <div id="contact" class="fa"></div>
-          </a>
-
-      </nav>
-      <header class="section active firstsection" id="section0">
-        <div class="content">
-          <div class="photo"></div>
-          <div class="title">Darina Pairel</div>
-          <div class="text">Frontend developer</div>
-          <div class="links">
-            <a class="link" href="https://github.com/darinapairel" target="_blank">
-              Github
-              <span id="github" class="fab"></span>
-            </a>
-            <a class="link" href="./DarinaPairelCV.pdf" download class="download">
-              CV
-              <span id="download" class="far"></span>
-            </a>
-          </div>
-          <a href="#secondsection"><span class="fa down" data-menuanchor="secondsection"></span></a>
-        </div>
-      </header>
-
-      <div class="section" data-anchor="secondsection" id="section1">
-        <section class="">
-          <div class="content ">
-            <div class="title">About</div>
-            <div class="text">I have more than 2,5 years of production experience<br /> I am a fast learner and open to fit your
-              tech stack. <br />Technologies I use working and developing pet projects:
-              <div class="stack">React.js, Redux (+ Saga), MobX <br /> TypeScript, HTML5, CSS3,<br /> styled-components,
-                MUI, SCSS/SASS, <br /> Git (GitHub | GitLab | Bitbucket), Jira, Docker</div>
-            </div>
-            <a href="#thirdsection"><span class="fa down" data-menuanchor="secondsection"></span></a>
-          </div>
-        </section>
-      </div>
-      
-      <section class="section">
-        <div class="content thirdsection" id="section2">
-          <div class="title">Feedback</div>
-          <form action="https://formspree.io/f/xjvdqdbz" method="POST" class="feedback-form">
-            <input type="text" id="name" name="name" placeholder="Name" required>
-            <input type="text" id="lastname" name="lastname" placeholder="Lastname">
-            <input type="text" id="email" name="email" placeholder="Contact email" required>
-            <textarea name="text" id="" cols="30" rows="5" required
-              placeholder="If you are interested and have any suggestions, please feel free to write me."></textarea>
-            <button>Send</button>
-          </form>
-          <nav class="footer">
-            <div class="logos">
-              <a href="https://github.com/darinapairel/" target="_blank" rel="noopener noreferrer">
-                <div class="fab github-logo logo"></div>
-              </a>
-              <a href="https://www.linkedin.com/in/d-i-pairel/" target="_blank" rel="noopener noreferrer">
-                <div class="fab linkedIn-logo logo"></div>
-              </a>
-              <a href="mailto:paireldarina@gmail.com" target="_blank" rel="noopener noreferrer">
-                <div class="far gmail-logo logo"></div>
-              </a>
-              <a href="https://www.facebook.com/darina.pairel" target="_blank" rel="noopener noreferrer">
-                <div class="fab facebook-logo logo"></div>
-              </a>
-              <a href="https://codepen.io/LostAndForgotten/" target="_blank" rel="noopener noreferrer">
-                <div class="fab codepen-logo logo"></div>
-              </a>
-            </div>
-          </nav>
-        </div>
-      </section>
-    </div>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./fullpage.js/dist/fullpage.js"></script>
-  <script>
-    new fullpage('#fullpage', {
-      anchors: ['firstsection', 'secondsection', 'thirdsection'],
-      menu: '#menu',
-      continuousVertical: true,
-      scrollBar: true,
-      responsiveHeight: true,
-      // responsiveSlides: true,
-      autoScrolling: false
-    });
-  </script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
 </body>
 
 </html>
